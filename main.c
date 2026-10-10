@@ -4,19 +4,11 @@
 
 
 int main(){
-    char charSelection[] = {'!','#','%','^','*'};
-    int size = 5;
-    
     char **canvas = createCanvas(5, 5);
     printCanvas(canvas, 5, 5);
-    freeCanvas(canvas, 5, 5);
+    freeCanvas(canvas, 5,);
 
 
-
-
-
-    
-    
     
     
     
