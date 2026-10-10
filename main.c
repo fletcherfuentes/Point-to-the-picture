@@ -1,8 +1,10 @@
+// Fletcher main file to run functions
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include "canvasMake.h"
 
+// code arguments and code to get command lines from class sep30
 int main(int argc, char **argv){
     srand(time(NULL));
     if (argc != 3){
@@ -12,6 +14,7 @@ int main(int argc, char **argv){
     int num1 = atoi(argv[1]);
     int num2 = atoi(argv[2]);
 
+    // variable to use canvas 2d array for other functions arguments
     char **canvas = createCanvas(num1, num2);
     printCanvas(canvas, num1, num2);
     freeCanvas(canvas, num1);

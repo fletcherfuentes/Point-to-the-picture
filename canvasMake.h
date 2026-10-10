@@ -1,4 +1,4 @@
-
+// fletcher fuentes header file to use functions in main file
 #ifndef CANVAS_MAKE
 #define CANVAS_MAKE
 
