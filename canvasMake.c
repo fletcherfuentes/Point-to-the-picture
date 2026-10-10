@@ -13,13 +13,11 @@ void printCanvas(char **canvas, int height, int width);
 void freeCanvas(char **canvas, int width);
 
 static char pickChar(char *charList, int size){
-    srand(time(NULL));
     int n =rand()%size;
     return charList[n];
 }
 
 static char genRandomChar(char *charList, int size, float chanceConvert){
-    srand(time(NULL));
     int localChance = (chanceConvert*10)+8;
     char pickedChar = pickChar(charSelection, size);
     int n=rand()%localChance;
