@@ -4,7 +4,8 @@
 
 
 int main(){
-
+    char charSelection[] = {'!','#','%','^','*'};
+    int size = 5;
     
 
 
