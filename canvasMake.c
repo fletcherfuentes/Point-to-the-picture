@@ -43,7 +43,9 @@ void printCanvas(char **canvas, int height, int width){
     }
 }
 
-void freeCanvas(char **canvas, int height, int width){
-    
-
+void freeCanvas(char **canvas, int width){
+    for(int i =0; i<width; i++){
+        free(canvas[i]);
+    }
+    free(canvas);
 }
