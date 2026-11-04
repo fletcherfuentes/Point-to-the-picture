@@ -3,7 +3,7 @@
 #define CANVAS_MAKE
 
 char** createCanvas(int width, int height);
-void printCanvas(char **canvas, int height, int width);
+void printCanvas(char **canvas, int width, int height);
 void freeCanvas(char **canvas, int width);
 
 #endif

@@ -10,7 +10,7 @@ float chance = 0.2;
 static char pickChar(char *charList, int size);
 static char genRandomChar(char *charList, int size, float chance);
 char** createCanvas(int width, int height);
-void printCanvas(char **canvas, int height, int width);
+void printCanvas(char **canvas, int width, int height);
 void freeCanvas(char **canvas, int width);
 
 // static function to hide from header file takes the charSelection variable
@@ -41,7 +41,9 @@ char** createCanvas(int width, int height){
 
 // function that takes the just made canvas and the 2 user inputs for use in the for statements to generate a random character for [i][j]
 // and prints [i][j] in the next nested for loop
-void printCanvas(char **canvas, int height, int width){
+
+// revision: fixed the order of where width and height were being called
+void printCanvas(char **canvas, int width, int height){
     for (int i = 0; i < width; i++ ){
         for(int j = 0; j< height; j++) canvas[i][j] = genRandomChar(charSelection, size, chance);
     }
